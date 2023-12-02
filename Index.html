@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulir Pendaftaran</title>
+  </head>
+  <body>
+    <form action="proses.php" method="post">
+      <label for="nama">Nama:</label>
+      <input type="text" name="nama" required />
+      <br>
+      <label for="agama">Agama:</label>
+      <select name="agama">
+        <option value="">Pilih Agama</option>
+        <option value="islam">Islam</option>
+        <option value="katolik">Katolik</option>
+        <option value="protestan">Protestan</option>
+      </select>
+      <br>
+      <label for="jabatan">Jabatan:</label>
+      <select name="jabatan">
+        <option value="">Pilih Jabatan</option>
+        <option value="manajer">Manajer</option>
+        <option value="karyawan">Karyawan</option>
+        <option value="direktur">Direktur</option>
+      </select>
+      <br>
+      <label for="status_nikah">Status Nikah:</label>
+      <select name="status_nikah">
+        <option value="">Pilih Status Nikah</option>
+        <option value="menikah">Menikah</option>
+        <option value="belum_menikah">Belum Menikah</option>
+      </select>
+      <br>
+      <label for="jumlah_anak">Jumlah Anak:</label>
+      <input type="number" name="jumlah_anak" min="0" max="5" required />
+      <input type="submit" value="Daftar" />
+    </form>
+  </body>
+</html>
